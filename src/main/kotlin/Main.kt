@@ -75,7 +75,7 @@ fun cOP() {
 // Exercício referente ao tópico "Entrada, processamento e saída", consultar outrasatividades.txt
 // para as demais definições e atividades.
 fun EPS1() {
-    println("Digite um número: ")
+    println("Digite um número para o exercício número um de Entrada, Processamento e saida: ")
 
     var num1 = readLine()!!.toInt()
     println("Digite um outro número: ")
@@ -84,14 +84,14 @@ fun EPS1() {
 }
 
 fun EPS2() {
-    println("Digite um número: ")
+    println("Digite um número para o exercício número dois de Entrada, Processamento e saida:: ")
     var num = readLine()!!.toInt()
     var quadrado = num * num
     println("O número $num elevado ao seu quadrado é igual a: $quadrado")
 }
 
 fun EPS3() {
-    println("Digite seu nome: ")
+    println("Digite seu nome número três de Entrada, Processamento e saida:: ")
     var nome = readLine()!!
     println("Digite sua idade")
     var idade = readLine()!!.toInt()
@@ -103,7 +103,7 @@ fun EPS3() {
 // Exercício referente ao tópico "Questões práticas sobre if/else:", consultar outrasatividades.txt
 // para as demais definições e atividades.
 fun else1(){
-    println ("Digite a nota da 1º prova do aluno: ")
+    println ("Digite a nota da 1º prova do aluno para o exercício número 1 sobre Questões práticas sobre if/else: ")
     var nota1 = readLine()!!.toDouble()
     println ("Digite a nota da 2º prova do aluno: ")
     var nota2 = readLine()!!.toDouble()
@@ -126,7 +126,7 @@ fun else3(){
 }
 
 fun else4(){
-    var id = println("Qual sua idade?: ")
+    var id = println("Qual sua idade? (referente ao para o exercício número 4 sobre Questões práticas sobre if/else:: ")
     var idade = readLine()!!.toInt()
     if (idade>18){println("Possui mais de 18 anos, pode passar.")}
     else if(idade==18){println("Pode passar")}
@@ -138,7 +138,7 @@ fun else4(){
 // Exercício referente ao tópico "Questões práticas sobre when", consultar outrasatividades.txt
 // para as demais definições e atividades.
 fun when1(){
-    println("Digite um número: ")
+    println("Digite um número (para o exercício nº 1 sobre Questões práticas sobre when) : ")
     var x = readLine()!!.toInt()
     val y = when(x){
         1 -> "Segunda-feira"
@@ -154,7 +154,7 @@ fun when1(){
 }
 
 fun when2(){
-    println("Digite o nome de um animal: ")
+    println("Digite o nome de um animal (para o exercício nº 2 sobre Questões práticas sobre when) : ")
     var x  = readLine()
     var y = when(x){
         "vaca","gato","cachorro","Vaca", "Gato", "Cachorro", "VACA", "GATO", "CACHORRO" -> "O animal é um mamífero."
@@ -183,7 +183,7 @@ fun when3(){
 }
 
 fun when4(){
-    println("Digite um número de 1 a 12: ")
+    println("Digite um número de 1 a 12 (para o exercício nº 4 sobre Questões práticas sobre when) : ")
     var x = readLine()!!.toInt()
     var y = when (x){
         1 -> "Janeiro"
@@ -206,6 +206,8 @@ fun when4(){
 // Exercício referente ao tópico "Desafio Semanal", consultar outrasatividades.txt
 // para as demais definições e atividades.
 fun desafio() {
+    println("Bem vindo à resolução meu desafio.")
+    print("")
     println("Você deseja converter uma temperatura (T), distância (D) ou tempo?")
 
     val x = readLine()
