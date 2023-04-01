@@ -5,24 +5,24 @@ também podem ser encontradas no arquivo outrasatividades.txt.  Elas estão divi
  a palavra do tópico resumida, exemplo, Variaveis e Constantes será VC. */
 fun main() {
     println("Oi, eu sou o Otávio, e este é o meu documento para a semana 1 de atividades em Kotlin.")
-    // aOP()
-    // bOP()
-    // cOP()
+    aOP()
+     bOP()
+    cOP()
 
-    // EPS1()
-    // EPS2()
-    // EPS3()
+     EPS1()
+     EPS2()
+    EPS3()
 
 
-    // else1()
-    // else2()
-    // else3()
-    // else4()
+     else1()
+     else2()
+    else3()
+    else4()
 
-    // when1()
-    // when2()
-    // when3()
-    // when4()
+    when1()
+    when2()
+    when3()
+    when4()
 
     desafio()
 }
@@ -205,25 +205,33 @@ fun when4(){
 
 // Exercício referente ao tópico "Desafio Semanal", consultar outrasatividades.txt
 // para as demais definições e atividades.
-fun desafio(){println("Você deseja converter uma temperatura (T), distância (D) ou tempo?")
+fun desafio() {
+    println("Você deseja converter uma temperatura (T), distância (D) ou tempo?")
 
     val x = readLine()
 
-    val y = if(x=="T" || x=="t"|| x=="Temperatura" || x=="temperatura"){
-        println("Você deseja converter Celsius para Fahrenheit (Digite 1) ou Fahrenheit para Celsius (Digite 2)?" )
+    val y = if (x == "T" || x == "t" || x == "Temperatura" || x == "temperatura") {
+        println("Você deseja converter Celsius para Fahrenheit (Digite 1) ou Fahrenheit para Celsius (Digite 2)?")
 
         val cf = readLine()!!.toInt()
-        var fah : Double
-        var cel : Double
+        var fah: Double
+        var cel: Double
         when (cf) {
-            1 -> {println("Qual é a temperatura em graus Celsius?: ")
-                var cel = readLine()!!.toDouble()
-                println("A temperatura $cel ºC convertida para Fahrenhait é igual a: "+ cel * 9/5 + 32)};
-            2 -> {println("Qual é a temperatura em Fahrenheit?: ")}
-                var fah = readLine()!!.toDouble()
-            println("A temperatura $fah convertida para Celsius é igual a: "+(fah-32)* 5/9)}}
+            1 -> {
+                println("Qual é a temperatura em graus Celsius?: ")
+                cel = readLine()!!.toDouble()
+                println("A temperatura $cel ºC convertida para Fahrenhait é igual a: " + cel * 9 / 5 + 32)
+            }
 
-    else if(x=="D"|| x=="d" || x=="Distância"|| x=="Distancia"|| x=="distancia"|| x=="distância"){
+            2 -> {
+                println("Qual é a temperatura em Fahrenheit?: ")
+                fah = readLine()!!.toDouble()
+                println("A temperatura $fah convertida para Celsius é igual a: " + (fah - 32) * 5 / 9)
+            }
+
+            else -> println("opção inválida")
+        }
+    } else if (x == "D" || x == "d" || x == "Distância" || x == "Distancia" || x == "distancia" || x == "distância") {
         println("O que você deseja converter? (MM, CM, M, KM)")
         var cf = readLine()
         println("Qual é o valor da médida a ser convertida?")
@@ -231,25 +239,115 @@ fun desafio(){println("Você deseja converter uma temperatura (T), distância (D
         println("Para que você deseja converter?")
         var pf = readLine()
 
-        when(cf){
-            "MM", "mm" -> if(pf=="CM" || pf=="cm"){println("$valor mm são ${valor/10} centímetros.")}
-            if(pf=="M" || pf=="m"){println("$valor mm são ${valor/1000} metros.")}
-                if(pf=="KM" || pf=="km"){println("$valor mm são ${valor/1000000} quilômetros.")}
+        when (cf) {
+            "MM", "mm" -> {
+                if (pf == "CM" || pf == "cm") {
+                    println("$valor mm são ${valor / 10} centímetros.")
+                } else if (pf == "M" || pf == "m") {
+                    println("$valor mm são ${valor / 1000} metros.")
+                } else if (pf == "KM" || pf == "km") {
+                    println("$valor mm são ${valor / 1000000} quilômetros.")
+                } else {
+                    println("Opção inválida")
+                }
+            }
 
-            "CM", "cm" -> if(pf=="MM" || pf=="mm"){println("$valor cm são ${valor*10} milímetros.")}
-            if(pf=="M" || pf=="m"){println("$valor cm são ${valor/100} metros.")}
-                if(pf=="KM" || pf=="km"){println("$valor cm são ${valor/100000} quilômetros.")}
+            "CM", "cm" -> {
+                if (pf == "MM" || pf == "mm") {
+                    println("$valor cm são ${valor * 10} milímetros.")
+                } else if (pf == "M" || pf == "m") {
+                    println("$valor cm são ${valor / 100} metros.")
+                } else if (pf == "KM" || pf == "km") {
+                    println("$valor cm são ${valor / 100000} quilômetros.")
+                } else {
+                    println("Opção inválida")
+                }
+            }
 
-            "M", "m" ->   if(pf=="MM" || pf=="mm"){println("$valor m são ${valor*1000} milímetros.")}
-            if(pf=="CM" || pf=="cm"){println("$valor m são ${valor*100} centímetros.")}
-                if(pf=="KM" || pf=="km"){println("$valor m são ${valor/1000} quilômetros.")}
+            "M", "m" -> {
+                if (pf == "MM" || pf == "mm") {
+                    println("$valor m são ${valor * 1000} milímetros.")
+                } else if (pf == "CM" || pf == "cm") {
+                    println("$valor m são ${valor * 100} centímetros.")
+                } else if (pf == "KM" || pf == "km") {
+                    println("$valor m são ${valor / 1000} quilômetros.")
+                } else {
+                    println("Opção inválida")
+                }
+            }
 
-            "KM", "km" -> if(pf=="MM" || pf=="mm"){println("$valor km são ${valor*1000000} milímetros.")}
-            if(pf=="CM" || pf=="cm"){println("$valor km são ${valor*100000} centímetros.")}
-                if(pf=="M" || pf=="m"){println("$valor km são ${valor*1000} metros.")}
+            "KM", "km" -> {
+                if (pf == "MM" || pf == "mm") {
+                    println("$valor km são ${valor * 1000000} milímetros.")
+                } else if (pf == "CM" || pf == "cm") {
+                    println("$valor km são ${valor * 100000} centímetros.")
+                } else if (pf == "M" || pf == "m") {
+                    println("$valor km são ${valor * 1000} metros.")
+                } else {
+                    println("Opção inválida")
+                }
+            }
 
             else -> println("Entrada inválida")
         }
+
+    } else if (x == "tempo" || x == "TEMPO" || x == "time" || x == "TIME" || x == "Tempo" || x == "Time") {
+        println("Você deseja converter horas (H), minutos (M) ou segundos (S)?")
+        var cf = readLine()
+
+        println("Você deseja converter para horas (H), minutos (M) ou segundos (S)? ")
+        var pf = readLine()
+        if (cf != pf) {
+            var valor: Double
+            when (cf) {
+                "H", "h", "Horas", "horas" -> {
+                    println("Qual é a quantidade de horas?")
+                    valor = readLine()!!.toDouble()
+                    if (pf == "M" || pf == "m" || pf == "Minutos" || pf == "minutos") {
+                        println("$valor Horas são ${valor * 60} minutos.")
+                    } else if (pf == "S" || pf == "s" || pf == "Segundos" || pf == "segundos") {
+                        println("$valor mm são ${valor * 3600} segundos.")
+                    } else {
+                        println("Opção inválida")
+                    }
+                }
+
+
+                "M", "m", "Minutos", "minutos" -> {
+                    println("Qual é a quantidade de minutos?")
+                    valor = readLine()!!.toDouble()
+                    if (pf == "S" || pf == "s" || pf == "Segundos" || pf == "segundos") {
+                        println("$valor Horas são ${valor * 60} segundos.")
+                    } else if (pf == "H" || pf == "h" || pf == "horas" || pf == "Horas") {
+                        println("$valor mm são ${valor / 60} horas.")
+                    } else {
+                        println("Opção inválida")
+                    }
+                }
+
+                "S", "s", "Segundos", "segundos" -> {
+                    println("Qual é a quantidade de segundos?")
+                    valor = readLine()!!.toDouble()
+                    if (pf == "M" || pf == "m" || pf == "Minutos" || pf == "minutos") {
+                        println("$valor Horas são ${valor / 60} minutos.")
+                    } else if (pf == "H" || pf == "h" || pf == "horas" || pf == "Horas") {
+                        println("$valor mm são ${valor / 3600} horas.")
+                    } else {
+                        println("Opção inválida")
+                    }
+                }
+
+                else -> {
+                    println("Opção inválida")
+                }
+            }
+
+        } else {
+            println("Opção inválida")
+        }
+
     }
-    else{println("Opção inválida")}
+    else {
+        println("Opção inválida")
+    }
 }
