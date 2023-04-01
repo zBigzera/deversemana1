@@ -1,0 +1,83 @@
+Semana 1
+Introdução ao Kotlin
+a) Crie um arquivo Kotlin e explique as diferenças entre ele e um arquivo Java.
+
+	R= Ao comparar os 2 arquivos lado a lado pude observar que a linguagem Kotlin é mais simples que a java, demandando linhas menores de código para executar a mesma função, além de não precisar repetir diversas vezes declarações como as respectivas das classes.
+
+Variáveis e Constantes
+a) Crie uma variável do tipo inteiro e atribua o valor 10. Em seguida, crie uma constante e
+atribua o valor 5. Qual a diferença entre variáveis e constantes?
+
+R= A diferença é que as variáveis podem ser alteradas posteriormente, enquanto as constantes são imutáveis.
+
+Tipos de dados
+a) Crie uma variável para armazenar um número decimal. Qual tipo de dado você deve
+utilizar?
+ R= Float ou Double.
+
+b) Crie uma variável para armazenar um texto e outra para armazenar um número inteiro.
+Qual tipo de dado você deve utilizar para cada uma?
+ R= String e Int
+
+c) Crie uma variável para armazenar um número inteiro e outra para armazenar um número decimal. Qual tipo de dado você deve utilizar para cada uma?
+R= Int e float
+
+Operadores
+a) Crie duas variáveis inteiras e faça a soma utilizando o operador +.
+  R= Feito em main. kt, 512 + 1271
+
+b) Crie uma variável do tipo Boolean e atribua o resultado da expressão 5 > 3 && 2 < 4. O
+que será exibido ao imprimir o valor dessa variável?
+  R= Ela retorna true.
+
+c) Crie uma variável do tipo Boolean e atribua o resultado da expressão !(10 > 5 || 3 < 1). O
+que será exibido ao imprimir o valor dessa variável?
+  R= Retornará false.
+
+Entrada, processamento e saída
+1 - Faça um programa que peça ao usuário para digitar dois números e mostre a soma desses números.
+  R= fun EPS1 em main.kt
+
+2 - Faça um programa que calcule o quadrado de um número informado pelo usuário.
+  R= Fun EPS2 em main.kt
+
+3 - Faça um programa que peça ao usuário para informar seu nome e sua idade, e que exiba uma mensagem de boas-vindas com o nome e a idade informados.
+  R= FUN EPS3 em main.kt
+
+Comentários
+a) Crie um arquivo Kotlin e insira um comentário explicando o objetivo do programa.
+  R= Primeiras linhas do código
+
+Questões práticas sobre if/else:
+1 - Faça um programa que receba duas notas de um aluno e calcule a média. Se a média for maior ou igual a 7, exiba "Aprovado". Caso contrário, exiba "Reprovado". Use if/else.
+  R= Exercício QIF1
+
+2 - Faça um programa que receba um número inteiro e verifique se ele é par ou ímpar usando if/else.
+  R=Exercício QIF2
+
+3 - Faça um programa que receba um número inteiro e verifique se ele é positivo, negativo ou zero usando if/else.
+  R=Exercício QIF3
+
+4 - Faça um programa que verifique se uma pessoa é maior de idade (18 anos ou mais) usando if/else.
+R=Exercício QIF4
+
+
+Questões práticas sobre when:
+1 - Faça um programa que receba um número de 1 a 7 e exiba o dia da semana correspondente usando when.
+  R= Exercício when1
+
+2 - Faça um programa que verifique se um animal é um mamífero, ave ou réptil usando when.
+R=Exercício When2
+
+3 - Faça um programa que receba uma letra e verifique se ela é uma vogal ou consoante usando when.
+R= Exercício When3
+
+4 - Faça um programa que receba um número de 1 a 12 e exiba o mês correspondente usando when.
+R= Exercício When4
+
+Desafio semanal
+1. Pergunte ao usuário qual tipo de unidade ele deseja converter: temperatura, distância ou tempo.
+2. De acordo com a resposta do usuário, pergunte qual é a unidade de origem e qual é a unidade de destino.
+3. Com base nas unidades escolhidas pelo usuário, faça a conversão adequada. Use o if/else para verificar o tipo de unidade escolhido e o when para verificar as unidades de origem e destino escolhidas pelo usuário.
+4. Exiba o resultado da conversão para o usuário.
+R= Tudo feito na fun desafio.
